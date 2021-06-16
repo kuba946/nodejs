@@ -48,12 +48,45 @@
             <li><a href="./">Strona główna</a></li>
             <li><a href="./zaloguj">Logowanie</a></li>
             <li><a href="./zarejestruj">Rejestracja</a></li>
-            <li><a href="./dodaj">Dodaj przepis</a></li>
+            <li><a href="./get-data">Dodaj przepis</a></li>
         </ul>
     </nav>
     <header>
-    <header>
         <h1>{{ pageTitle }}</h1>
     </header>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Opis</th>
+                    <th>Autor</th>
+                </tr>
+            </thead>
+            <tbody id="przepisy"></tbody>
+        </table>
+    </div>
+    <script>
+        fetch("http://localhost:5500/przepis"),{
+            method: "get",
+            headers: {
+                'Content-Type': 'application/json; charset=UTF8',
+                'Login': "tutaj login z cookie",
+                'Password': "tutaj haslo z cookie"
+            }
+        })
+        .then(response => response.json()).then(przepisy => {
+            document.getElementById("przepisy").innerHTML="";
+        })
+        document.getElementById("przepisy").innerHTML="";
+        przepisy.forEach({
+            document.getElementById("przepisy").innerHTML +=
+             "<tr><td>" +
+            przepis.name + "</td> <td>" +
+            przepis.desc + "</td> <td>" +
+            przepis.author + 
+            "</td> </tr>";
+        })
+    </script>
 </body>
 </html>

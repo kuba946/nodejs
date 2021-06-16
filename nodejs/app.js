@@ -5,19 +5,21 @@ const Recipe = require('./db/models/recipe')
 const utils = require('./utils')
 const mongoose = require('mongoose')
 const express = require('express')
+var router = express.Router();
+var assert = require('assert')
+var url = 'mongodb://localhost:27017/mongo-test'
+var mongo = require('mongodb').MongoClient
+const app = express()
 const port = 5500
 
 const findUsers = async () => {
     try {
         const users = await User.find({})
-        //console.log(users.length)
         return users
     } catch (error) {
         return error
     }
 }
-
-utils.findUsers()
 
 utils.createuser({
     name: 'admin',
@@ -37,7 +39,6 @@ utils.createrecipe({
     author: 'admin'
 })
 
-const app= express()
 app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
@@ -60,23 +61,12 @@ app.get('/zaloguj', (req, res) => {
     })
 })
 app.get('/zarejestruj', (req, res) => {
-    var temp = Recipe.find({}).exec( (err, czlowiek) => {
-        var title = czlowiek[0].name
-        for (var i = 0; i < czlowiek.length; i++){
-            title += "<tr><td>" + czlowiek[i].name + "</td><td>" + czlowiek[i].desc + "</td><td>" + czlowiek[i].author + "</td></tr>"
-        }
-        res.render("zarejestruj", {
-            pageTitle : title// + " <br>" + czlowiek[1].name + " " +  czlowiek[2].name + " " + czlowiek.length
-        })
-        
-        console.log(czlowiek[0].name + " " + czlowiek[1].name + " " +  czlowiek[2].name)
-        console.log(temp)
+    const title = utils.generateTitle('Zarejestruj się')
+    res.render('zarejestruj',{
+    pageTitle: title
     })
-    // //utils.generateTitle('Zarejestruj się')
-    // res.render('zarejestruj',{
-    //     pageTitle: title
-    // })
 })
+
 
 app.get('/services', (req, res) => {
     var temp = Recipe.find({}).exec( (err, czlowiek) => {

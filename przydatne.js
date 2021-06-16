@@ -255,3 +255,14 @@ module.exports = {
     add
 }
 // utils.js =======================================================================================================================
+    //    app.get('/zarejestruj', (req, res) => {
+    // var temp = Recipe.find({}).exec( (err, czlowiek) => {
+    //     var title = czlowiek[0].name
+    //     for (var i = 0; i < czlowiek.length; i++){
+    //         title += "<tr><td>" + czlowiek[i].name + "</td><td>" + czlowiek[i].desc + "</td><td>" + czlowiek[i].author + "</td></tr>"
+    //     }
+    //     res.render("zarejestruj", {
+    //         pageTitle : title// + " <br>" + czlowiek[1].name + " " +  czlowiek[2].name + " " + czlowiek.length
+    //     })
+    // })
+// })
