@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/styles.css">
+    <title>Przepisy kulinarne</title>
+    <style>
+        ul {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        }
+            
+        li a {
+            display: block;
+            float: left;
+            text-align: center;
+            font-size: 1.2em;
+            width: 130px;
+            text-decoration: none;
+            color: aqua;
+            background-color: blue;
+            padding: 10px 15px;
+            margin: 0px 1px 1px 0px;
+            border: 1px solid navy;
+            border-radius: 3px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            box-shadow: 0px 2px 3px gray;
+            -moz-box-shadow: 0px 2px 3px gray;
+            -webkit-box-shadow: 0px 2px 3px gray;
+        }
+            
+        li a:hover {
+            color: blue;
+            background: aqua;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nazwa</th><th>Przepis</th><th>Autor</th>
+        </tr>
+        <tr>
+            <td>{{ nazwa }}</td><td>{{ haslo }}</td>
+        </tr>
+        {{ przepisy }}
+    </table>
+    <div id="d"></div>
+</body>
+<script>
+    document.getElementById("d").innerHTML = "<table><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr><tr><td>Schabowy z ziemniakami i surówką</td><td>Wez kotlet, ziemniaki, warzywa i to zrób.</td><td>admin</td></tr></table>";
+</script>
+</html>
