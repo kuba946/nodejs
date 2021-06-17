@@ -4,14 +4,20 @@
         <thead>
             <tr>
                 <th>Co robimy?</th>
+                <th>L.p.</th>
                 <th>Nazwa</th>
+                <th>Opis</th>
+                <th>Autor</th>
             </tr>
         </thead>
         <tbody>
             <%var i = 1; recipes.forEach(function(recipe){ %>
                 <tr>
-                    <td><a href="./usuwanie?id=<%= recipe._id %>"> <%= recipe._id %>  USUŃ</a></td>
+                    <td><a href="./usuwanie?id=<%= recipe._id %>">   USUŃ   </a></td>
+                    <td><%= i %></td>
                     <td><%= recipe.name %></td>
+                    <td><%= recipe.desc %></td>
+                    <td><%= recipe.author %></td>
                 </tr>
             <% i++; }); %>
         </tbody>

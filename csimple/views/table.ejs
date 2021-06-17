@@ -1,0 +1,12 @@
+<h1>Table</h1>
+<ul>
+    <% users.forEach(function(user){ %>
+      <li><%= user.name %>
+        <ul>
+            <% Object.keys(user).forEach(function(key){ %>
+                <li><strong><%= key%></strong>: <%= user[key]%></li>
+            <% }); %>
+        </ul>
+    </li>
+    <% }); %>
+  </ul>
