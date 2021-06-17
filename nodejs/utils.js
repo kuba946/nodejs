@@ -1,26 +1,20 @@
-require('./db/mongoose')
-const User = require('./db/models/user')
-const Recipe = require('./db/models/recipe')
+require('mongoose')
+const User = require('./models/user')
+const Recipe = require('./models/recipe')
 
 const createuser = async (data) => {
     try {
         const user = new User(data)
         await user.save()
-
-        //console.log(user)
     } catch (error){
-        //console.log(error)
     }
 }
 
-const createrecipe = async (data) => {
+const createRecipe = async (data) => {
     try {
         const recipe = new Recipe(data)
         await recipe.save()
-
-        //console.log(user)
     } catch (error){
-        //console.log(error)
     }
 }
 
@@ -44,7 +38,7 @@ const findUsers = async () => {
 
 module.exports = {
     createuser,
-    createrecipe,
+    createRecipe,
     generateTitle,
     findUsers
 }

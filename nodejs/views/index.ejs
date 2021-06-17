@@ -1,0 +1,30 @@
+<%- include('subviews/header'); %>
+    <div>
+        <table class='table'>
+            <thead>
+                <tr>
+                    <th>L.p.</th>
+                    <th>Nazwa</th>
+                    <th>Opis</th>
+                    <th>Autor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%var i = 1; recipes.forEach(function(recipe){ %>
+                    <tr>
+                        <td><%= i %></td>
+                        <td><%= recipe.name %></td>
+                        <td><%= recipe.desc %></td>
+                        <td><%= recipe.author %></td>
+                    </tr>
+                <% i++; }); %>
+            </tbody>
+        </table>
+        <table>
+               <tr>
+                 <td></td>
+                 <td></td>
+               </tr>
+            </table>
+    </div>
+<%- include('subviews/footer'); %>

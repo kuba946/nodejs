@@ -1,0 +1,13 @@
+<%- include('subviews/header'); %>
+<form method="POST">
+    <div>
+        Nazwa:<br>
+        <input type='text' name='name' value='<%= name %>' /></br>
+        Opis:<br>
+        <textarea name='desc' value='<%= desc %>' cols="79" rows="9" ></textarea></br>
+        Autor:<br>
+        <input type='text' name='author' value='<%= author %>' />
+    </div><br>
+    <button>Dodaj</button>
+</form>
+<%- include('subviews/footer'); %>
