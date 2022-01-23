@@ -2,7 +2,7 @@ var http = require('http')
 const utils = require('./utils')
 const express = require('express');
 const app = express()
-const port = 5500
+const port = 3000
 
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
